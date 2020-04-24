@@ -6,8 +6,4 @@ Our two data sources will be:
 a) a public CSV containing high-level information
 b) JSON data on stock-specific daily stats grabbed from an API
 
-Our transformations will include:
--Aggregating the JSON data into things like averages.
--Aggregating sector-level information into broader (or maybe more specific) sectors.
--Dropping any columns that would be unnecessary to our schema.
--Dealing with partials in the dataset.
+Our transformations will include: aggregating the JSON data into things like averages, aggregating sector-level information into broader (or maybe more specific) sectors, dropping any columns that would be unnecessary to our schema, and dealing with partially filled rows in the dataset.
