@@ -9,7 +9,7 @@ symbol TEXT,
 company_name TEXT,
 sector TEXT,
 price INT,
-price_earnings INT,
+price_per_earnings INT,
 dividend_yield INT,
 year_low INT,
 year_high INT,
@@ -28,8 +28,15 @@ date_2020_03 INT,
 diff INT
 );
 
+--Load verification
+
 SELECT * FROM company_info
 LIMIT 10;
 
 SELECT * FROM closing_prices
+LIMIT 10;
+
+SELECT * FROM company_info
+JOIN closing_prices
+ON company_info.symbol = closing_prices.symbol
 LIMIT 10;
